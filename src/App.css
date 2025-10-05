@@ -41,3 +41,35 @@
 .read-the-docs {
   color: #888;
 }
+
+
+/* El símbolo de cargar */
+.loadSymbol {
+ position: absolute;          
+  top: 50%;                    
+                      
+  transform: translate(-50%, -50%);
+  border: 15px  solid white;
+  border-top: 12px solid #050e13;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 1s linear infinite;
+  
+}
+
+/* Para que gire*/
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.imageContainer {
+  position: relative;   
+  width: 1200px;
+  height: 800px;
+  display: flex;
+  justify-content: center;     
+  align-items: center;          
+}
