@@ -95,7 +95,9 @@ function App() {
         <Botoncito
           emoji="🐻"
           randomImgFunction={async () => {
-            return "https://placebear.com/200/300#nonce=" + Math.floor(Math.random()*1e10); // Nonce usado para no tirar de caché de la imagen
+            const width = Math.floor(Math.random() * 101) + 150;  // 150-250
+            const height = Math.floor(Math.random() * 101) + 250; // 250-450
+            return `https://placebear.com/${width}/${height}`;
           }}
           onRandomImgFetch={updatePhoto}
         />
